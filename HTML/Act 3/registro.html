@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" required placeholder="Ej: Juan Pérez"><br><br>
+
+        <label for="mail">Correo electrónico:</label><br>
+        <input type="email" id="mail" required placeholder="Ej: correo@ejemplo.com"><br><br>
+
+        <label for="contrasena">Contraseña</label><br>
+        <input type="password" id="contrasena" required placeholder="Mínimo 8 caracteres"><br>
+
+        <p>Selección de género:</p>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="Femenino"> 
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="Otro"> 
+        <label for="otro">Otro</label><br>
+
+        <p>Intereses</p>
+        <input type="checkbox" id="musica" name="intereses" value="Musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="deporte" name="intereses" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="lectura" name="intereses" value="Lectura">
+        <label for="lectura">Lectura</label><br>
+        <input type="checkbox" id="ciencia" name="intereses" value="Ciencias">
+        <label for="ciencia">Ciencia</label><br><br>
+
+        <label for="comentarios">Comentarios adicionales</label><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="40" placeholder="Escriba su comentario aqui"></textarea><br>
+
+        <label for="pais">País</label><br>
+        <select name="pais" id="pais" required tabindex="7">
+            <option value="" disabled selected>Seleccione un país</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+        </select><br><br>
+
+        <button type="submit" tabindex="8">Enviar Registro</button>
+    </form>
+</body>
+</html>
